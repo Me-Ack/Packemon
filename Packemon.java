@@ -4,7 +4,6 @@
     - HP
     - Speed
  */
-
 public class Packemon {
     
     public static void main(String[] args) {
