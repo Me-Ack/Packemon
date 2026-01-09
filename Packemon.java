@@ -15,11 +15,10 @@ public class Packemon {
         protected int defense;
         protected int speed;
         
-        public Monster(String name, int hp, int attack, int defense, int speed) {
+        public Monster(String name, int hp, int attack, int speed) {
             this.name = name;
             this.hp = hp;
-            this.attack = attack;
-            this.defense = defense;
+            this.attack = attack;;
             this.speed = speed;
         }
         
@@ -27,26 +26,25 @@ public class Packemon {
             System.out.println(name + " Stats:");
             System.out.println("HP: " + hp);
             System.out.println("Attack: " + attack);
-            System.out.println("Defense: " + defense);
             System.out.println("Speed: " + speed);
         }
     }
     
     static class Saungikar extends Monster {
         public Saungikar() {
-            super("Saungikar", 45, 49, 49, 45);
+            super("Saungikar", 45, 49, 45);
         }
     }
     
     static class Gingras extends Monster {
         public Gingras() {
-            super("Gingras", 40, 45, 35, 56);
+            super("Gingras", 40, 45, 56);
         }
     }
     
     static class KashaBlois extends Monster {
         public KashaBlois() {
-            super("Kasha-Blois", 50, 50, 40, 50);
+            super("Kasha-Blois", 50, 50, 50);
         }
     }
     
@@ -54,7 +52,5 @@ public class Packemon {
         Monster choice1 = new Saungikar();
         Monster choice2 = new Gingras();
         Monster choice3 = new KashaBlois();
-        
-        choice1.displayStats();
     }
 }
