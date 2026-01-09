@@ -12,7 +12,7 @@ public class Choice {
         choice.choosePackemon();
     }
 
-    public void choosePackemon() {
+    public String choosePackemon() {
         System.out.println("Choisis ton Packemon :");
         System.out.println("1. Saungikar");
         System.out.println("2. Kasha-Blois");
@@ -43,5 +43,6 @@ public class Choice {
             name = "Gingras";
         }
         System.out.println("Tu as choisi : " + name + " Packemon !");
+        return name;
     }
 }
