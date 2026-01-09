@@ -9,11 +9,11 @@ public class Battle {
  Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
-        System.out.println("Bienvenue dans la bataille contre Zimon !");
-
         // L'utilisateur choisit son Packemon
         Choice choice = new Choice();
         String userPackemon = choice.choosePackemon();
+
+        System.out.println("Bienvenue dans la bataille contre Zimon !");
 
         // Zimon invoque Bebs
         String opponentPackemon = "Bebs";
