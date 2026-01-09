@@ -48,9 +48,29 @@ public class Packemon {
         }
     }
     
+    static class Choice {
+        public Monster choosePackemon(int choice) {
+            switch(choice) {
+                case 1:
+                    return new Saungikar();
+                case 2:
+                    return new Gingras();
+                case 3:
+                    return new KashaBlois();
+                default:
+                    System.out.println("Invalid choice");
+                    return null;
+            }
+        }
+    }
+    
     public static void main(String[] args) {
-        Monster choice1 = new Saungikar();
-        Monster choice2 = new Gingras();
-        Monster choice3 = new KashaBlois();
+        Choice choice = new Choice();
+        Monster chosenPackemon = choice.choosePackemon(1); // Pass choice number here
+        
+        if (chosenPackemon != null) {
+            System.out.println("Le Packemon choisi est : " + chosenPackemon.name);
+            chosenPackemon.displayStats();
+        }
     }
 }
