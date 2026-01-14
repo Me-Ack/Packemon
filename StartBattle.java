@@ -11,7 +11,7 @@ public class StartBattle {
         System.out.println("Es-tu prêt à commencer la bataille ? (oui/non)");
         String response = scanner.nextLine().toLowerCase();
 
-        if (response.equals("oui") || response.equals("yes")) {
+        if (response.equals("oui")) {
             Packemon opponent = Packemon.createPackemon("bebs");
             System.out.println("Bienvenue dans la bataille contre Zimon !");
             System.out.println("Zimon invoque " + opponent.getName() + " !");

@@ -57,7 +57,7 @@ public class Packemon {
             case "kasha-blois":
                 return new Packemon("Kasha-Blois", 140, 70);
             case "bebs":
-                return new Packemon("Bebs", 150, 90);
+                return new Packemon("Bebs", 160, 90);
             default:
                 throw new IllegalArgumentException("Unknown Packemon name: " + name);
         }
