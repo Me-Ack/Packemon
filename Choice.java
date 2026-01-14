@@ -5,9 +5,8 @@
 import java.util.Scanner;
 
 public class Choice {
-
+    static Scanner sc = new Scanner(System.in);
     public static String choosePackemon() {
-        Scanner sc = new Scanner(System.in);
         
         System.out.println("Choose a Packemon:");
         System.out.println("1. Saungikar");
