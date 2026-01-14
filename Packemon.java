@@ -3,7 +3,6 @@
     - HP
     - Speed
  */
-
 public class Packemon {
     private String name;
     private int hp;
@@ -57,6 +56,8 @@ public class Packemon {
                 return new Packemon("Gingras", 200, 60);
             case "kasha-blois":
                 return new Packemon("Kasha-Blois", 140, 70);
+            case "bebs":
+                return new Packemon("Bebs", 160, 90);
             default:
                 throw new IllegalArgumentException("Unknown Packemon name: " + name);
         }

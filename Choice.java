@@ -5,9 +5,8 @@
 import java.util.Scanner;
 
 public class Choice {
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
+    public static String choosePackemon() {
         
         System.out.println("Choose a Packemon:");
         System.out.println("1. Saungikar");
@@ -20,15 +19,23 @@ public class Choice {
             case 1: name = "Saungikar"; break;
             case 2: name = "Gingras"; break;
             case 3: name = "Kasha-Blois"; break;
-            default: System.out.println("Invalid choice"); return;
+            default: System.out.println("Invalid choice"); return null;
         }
+        
+        return name;
+    }
+
+    public static void main(String[] args) {
+        String name = choosePackemon();
+        if (name == null) return;
         
         Packemon p = Packemon.createPackemon(name);
         System.out.println("Name: " + p.getName());
         System.out.println("HP: " + p.getHp());
         System.out.println("Speed: " + p.getSpeed());
         
-        sc.close();
+        // Start the battle confirmation
+        StartBattle.startBattle(p);
     }
 
 }
